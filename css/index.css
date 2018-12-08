@@ -1,0 +1,25 @@
+body{
+	background-color: #39ac73;
+}
+#card{
+	background-color: #8cd9b3;
+}
+#avatar{
+	float: left;
+	width: 20%;
+	margin-left: 40%;
+	position:absolute;
+	margin-top: 45%;
+}
+#bg{
+	position:relative;
+}
+h1{
+	font-size: 2em;
+}
+h2{
+	font-size: 1.5em;
+}
+button{
+	background-color: #339966;
+}
