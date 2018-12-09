@@ -1,6 +1,6 @@
 <?php
 
-include('scriptConexion.php');
+include_once('scriptConexion.php');
 
 $peso = $_POST['peso'];
 $estatura = $_POST['estatura'];

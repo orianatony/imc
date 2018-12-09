@@ -1,6 +1,8 @@
 <?php
 
 include_once('user_functions.php');
+include_once('tmb_functions.php');
+include_once('sex_functions.php');
 
 $action = $_POST['action'];
 
@@ -18,6 +20,12 @@ switch ($action) {
         $output = array(
             "error_id" => 0
         );
+        break;
+    case 'getNivelActividad':
+        $output = getNivelActividad();
+        break;
+    case 'getSexos':
+        $output = getSexos();
         break;
 }
 

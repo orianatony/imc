@@ -70,7 +70,7 @@ function validar(inputs_values){
     }    
 
     initToastr();
-    if(validated == true){
+    if(validated === true){
         $.ajax({
           method: "POST",
           url: "../php/calcularIMC.php",

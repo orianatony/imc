@@ -8,35 +8,31 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/toastr.min.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Login</title>
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">IMC_TMB</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Datos IMC</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Datos TMB</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="logout" href="#">Cerrar sesion</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<body class="bg">
+<?php include('navbar.php');?>
 <div class="container-fluid">
-
-    <p>Bienvenido <?php echo $_SESSION['name'];?></p>
-
+    <div class="row mt-5" >
+        <div class="col-lg-6 offset-lg-3">
+            <div id="card" class="card shadow p-3 mb-3 rounded">
+                <div class="card-header">
+                    Acciones
+                </div>
+                <div class="card-body text-center col-lg-6 offset-lg-3">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="col-lg-10 offset-lg-1">
+                                <a type="button" class="btn btn-primary btn-block mt-3" href="imc_form.php">Calcule su IMC</a>
+                                <a type="button" class="btn btn-primary btn-block mt-4" href="tmb_form.php">Calcule su TMB</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
